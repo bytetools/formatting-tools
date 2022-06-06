@@ -20,3 +20,19 @@ $ replace-bad-characters test.txt
 
 This vim script defines a function that will (mostly) format sentences on one line.
 It screws up on colons and and question marks if text is after it, but otherwise is fairly accurate.
+
+### Usage
+
+```vim
+:call FormatSentence()
+```
+
+To attach it to a key sequence, for example `Ctrl+Shift+p`
+
+```vim
+nnoremap <C-S-p> :call FormatSentence()<CR>
+```
+
+## Contribution
+
+If you'd like to contribute, please open a pull require on [the Github](https://github.com/bytetools/formatting-tools/) unless you work for Bytetools and have permissions.
