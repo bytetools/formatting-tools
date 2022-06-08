@@ -8,4 +8,5 @@ sed -i 's//*/g' $1
 sed -i 's/▪/*/g' $1
 sed -i 's/•/*/g' $1
 # replace ligatures (fi), (fl) with fi, fl; this makes things easier to `grep` through
-sed -i 's/ﬂ/fl/g'
+sed -i 's/ﬂ/fl/g' $1
+sed -i 's/ﬁ/fi/g' $1
